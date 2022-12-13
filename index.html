@@ -23,18 +23,13 @@
   </head>
   <body>
     <main class="card">
-      <div class="mobile-wrapper">
-        <img src="./images/image-header-mobile.jpg" aria-hidden="true" alt="" />
-        <div class="overlay" aria-hidden="true"></div>
-      </div>
-      <div class="desktop-wrapper">
-        <img
-          src="./images/image-header-desktop.jpg"
-          aria-hidden="true"
-          alt=""
+      <picture>
+        <source
+          media="(min-width: 71.875rem)"
+          srcset="./images/image-header-desktop.jpg"
         />
-        <div class="overlay" aria-hidden="true"></div>
-      </div>
+        <img src="./images/image-header-mobile.jpg" aria-hidden="true" alt="" />
+      </picture>
       <section class="content">
         <h1>Get <span>insights</span> that help your business grow.</h1>
 
@@ -44,20 +39,20 @@
         </p>
 
         <div class="stats">
-          <div>
-            <h2>10k+</h2>
-            <div>COMPANIES</div>
-          </div>
+          <ul>
+            <li class="list-heading">10k+</li>
+            <li>COMPANIES</li>
+          </ul>
 
-          <div>
-            <h2>314</h2>
-            <div>TEMPLATES</div>
-          </div>
+          <ul>
+            <li class="list-heading">314</h2>
+            <li>TEMPLATES</li>
+          </ul>
 
-          <div>
-            <h2>12M+</h2>
-            <div>QUERIES</div>
-          </div>
+          <ul>
+            <li class="list-heading">12M+</li>
+            <li>QUERIES</li>
+          </ul>
         </div>
       </section>
     </main>

@@ -56,9 +56,14 @@ body {
   border-radius: calc(10rem / 16);
 }
 
-.card img,
-.overlay {
+picture {
+  background: hsl(277, 64%, 61%);
   border-radius: calc(10rem / 16) calc(10rem / 16) 0px 0px;
+}
+
+img {
+  opacity: 0.8;
+  mix-blend-mode: multiply;
 }
 
 .content {
@@ -82,17 +87,16 @@ p {
   color: hsla(0, 0%, 100%, 0.75);
 }
 
-h2 {
-  font-size: calc(24rem / 16);
-  color: hsl(0, 0%, 100%);
-  margin-bottom: calc(2rem / 16);
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 span {
   color: hsl(277, 64%, 61%);
 }
 
-.stats div {
+ul li {
   font-family: "Lexend Deca", sans-serif;
   font-size: calc(12rem / 16);
   color: hsla(0, 0%, 100%, 0.6);
@@ -100,16 +104,15 @@ span {
   margin-bottom: 1.5rem;
 }
 
+.list-heading {
+  font-size: calc(24rem / 16);
+  color: hsl(0, 0%, 100%);
+  margin-bottom: calc(2rem / 16);
+  font-weight: 700;
+}
+
 .stats {
   margin-top: calc(40rem / 16);
-}
-
-.desktop-wrapper {
-  display: none;
-}
-
-.mobile-wrapper {
-  position: relative;
 }
 
 .overlay {
@@ -171,17 +174,11 @@ footer {
     padding: calc(72rem / 16) calc(72rem / 16) 60px calc(72rem / 16);
   }
 
-  .mobile-wrapper {
-    display: none;
+  picture {
+    border-radius: 0px calc(8rem / 16) calc(8rem / 16) 0px;
   }
 
-  .desktop-wrapper {
-    display: block;
-    flex: 1;
-    position: relative;
-  }
-
-  .desktop-wrapper img {
+  img {
     height: 100%;
     object-fit: cover;
   }
